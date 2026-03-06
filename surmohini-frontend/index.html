@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SurMohini – AI Audio Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>SurMohini – AI Audio Tools</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+  <label class="upload-label" for="audioInput">Upload Audio File</label>
+  <input type="file" id="audioInput" accept="audio/*">
+
+  <button id="previewBtn">▶ 30‑Second Preview</button>
+
+  <button id="separateBtn">Separate Audio (Full Download)</button>
+  <button id="convertBtn">Convert Instrument (Full Download)</button>
+
+  <button id="scaleBtn">Scale Volume</button>
+
+  <!-- Pitch Control -->
+  <label style="display:block;margin-top:15px;">Pitch Shift (Semitones):</label>
+  <input type="range" id="pitchSlider" min="-6" max="6" value="0">
+  <button id="pitchBtn">Apply Pitch Shift</button>
+
+  <p id="result"></p>
+</div>
+
+
+<footer>© 2026 SurMohini</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

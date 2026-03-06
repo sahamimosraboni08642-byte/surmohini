@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tools</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">AI Audio Tools</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tools.html">Tools</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="tool-container">
+  <h1>AI Audio Tools</h1>
+
+  <div class="upload-box">
+    <label>Select an audio file:</label>
+    <input id="audioUpload" type="file" accept="audio/*">
+  </div>
+
+  <div class="task-box">
+    <label>Select processing:</label>
+    <select id="taskSelect">
+      <option value="vocals">Remove Vocals</option>
+      <option value="stems">Full Stem Separation</option>
+      <option value="convert">Convert Instrument</option>
+    </select>
+  </div>
+
+  <div id="conversionBox" class="hidden">
+    <label>Convert From:</label>
+    <input id="fromInstrument" placeholder="e.g., guitar">
+
+    <label>Convert To:</label>
+    <input id="toInstrument" placeholder="e.g., piano">
+  </div>
+
+  <button id="processBtn" class="button">Process</button>
+
+  <div id="results"></div>
+</section>
+
+<footer>
+  © 2026 AI Audio Tools.
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
